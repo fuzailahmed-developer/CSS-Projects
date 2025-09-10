@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body,html{
+    scroll-behavior: smooth;
+    scroll-margin: 30px;
+    line-height: 1.4;
+}
+a{
+ text-decoration: none;   
+ color: black;
+}
+.container{
+    display: flex;
+}
+header{
+    flex-basis: 15%;
+}
+main{
+    flex-basis: 80%;
+    padding: 1.5% 2%;
+}
+main li{
+    list-style: inside;
+}
+.introduction{
+    span{
+        display: block;
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+header{
+    border: 1px solid black;
+    min-height: 100vh;
+    text-align: center;
+    background-color:#FDFAF6;
+}
+header li{
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav h1{
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+/* about javascript  */
+.about-javascript{
+    span{
+        display: block;
+            font-size: 26px;
+            font-weight: 700;
+            padding: 10px 0;
+    }
+}
+/* java and javaScript  */
+.java-java_script{
+    span{
+        display: block;
+            font-size: 26px;
+            font-weight: 700;
+            padding: 20px 0;
+    }
+}

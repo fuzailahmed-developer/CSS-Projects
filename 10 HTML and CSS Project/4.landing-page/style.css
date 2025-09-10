@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    height: 100vh;
+    background-image: url('/assits/mpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header h1{
+    font-size: 48px;
+    color: white;
+    padding: 20px 10% 0 28%;
+    span{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .color-md-h{
+        color: #4635B1;
+    }
+}
+.middle h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 2.5% 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    span{
+        font-size: 58px;
+    }
+}
+.card-container{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    flex-basis: 30%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    overflow: hidden;
+}
+.card-content{
+    padding: 10px;
+    p{
+        padding: 10px 0;
+        text-align: justify;
+    }
+}
+.image img{
+    width: 100%;
+    transition: .5s;
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+/* box-contain  */
+.box-contain{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.box-1, .box-2{
+    background-color: #222831;
+    color: white;
+    padding: 20px 20px 20px 5%;
+    h3{
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    
+}
+.box-1{
+    border-right: 1px solid #00ADB5;
+}
+.box-1 p,
+.box-2 p{
+    padding: 10px 0;
+}
+
+/* footer  */
+footer {
+    border-top: 1px solid #00ADB5;
+    text-align: center;
+    background-color: #393E46;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width:1100px) {
+    .card{
+        flex-basis: 48%;
+        margin-top: 20px;
+        margin: 20px auto 0 auto;
+        text-align: start;
+    }
+}
+@media screen and (max-width:768px) {
+    .card-container{
+        flex-direction: column;
+    }
+    .box-contain{
+        flex-direction: column;
+    }
+    header h1{
+        padding: 20px 5% 0 20%;;
+    }
+    .box-1{
+        border-bottom: 1px solid #00ADB5;
+    }   
+}

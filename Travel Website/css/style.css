@@ -1,0 +1,84 @@
+*{
+box-sizing: border-box;
+}
+:root{
+    --orange:#DF6951;
+    --li-text-color:#212832;
+    --hero-p:#5E6282;
+    --hero-btn-bg:#F1A501;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Volkhov", serif;
+}
+p{
+    font-family: "Poppins", sans-serif;
+}
+li{
+      font-family: "Open Sans", sans-serif;
+}
+
+/*? header section  */
+header{
+    padding: 35px 0 18px 0;
+}
+.nav-ul a{
+    color:var(--li-text-color);
+}
+.nav-btn button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--li-text-color);
+}
+.nav-btn i{
+    display: none;
+}
+/*? hero section */
+.hero-content .hero-span{
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.hero-content h1{
+    font-size: 84px;
+    padding: 10px 0 24px 19px;
+    line-height: 1.1;
+}
+.hero-content p{
+    color: var(--hero-p);
+    width: 72%;
+    padding-bottom: 25px;
+}
+.hero-btn button:first-child{
+    padding: 19px 26px 18px 27px;
+    background-color: var(--hero-btn-bg);
+    border-radius: 10px;
+}
+.hero-btn-2 button{
+    padding: 19px ;
+    border-radius: 10px;
+    color: #686D77;
+}
+.hero-btn-2 i{
+    color: white;
+    background-color: var(--orange);
+    padding: 17px 24px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.bg-decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px; /* adjust as needed */
+  height: 700px; /* adjust as needed */
+  background-image: url('../assits/Decore (1).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: -1; /* Make sure it's behind content */
+  pointer-events: none; /* so it doesn’t block clicks */
+}
+
+
+

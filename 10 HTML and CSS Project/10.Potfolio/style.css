@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--lighting-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav li {
+    font-size: 1.8rem;
+    border-bottom: 0.4rem solid transparent;
+    font-weight: 600;
+    transition: 0.5s linear;
+}
+
+nav li:hover {
+    border-bottom: 0.4rem solid var(--secondary-color);
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/** hero=section  */
+#hero {
+    background-color: var(--dark-color);
+    padding: 4rem 0;
+    height: calc(100vh - 66px);
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    place-items: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hi_text {
+    color: var(--secondary-color);
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.name_text {
+    font-size: 5rem;
+}
+
+#hero h2  span{
+  font-size: 4rem;
+  overflow: hidden; /* Ensures the content is not revealed until animation */
+  border-right: 0.15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps content on a single line */
+  margin: 0 auto;
+  width: 0; /* Start with no width */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40ch; /* Adjust based on text length */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
